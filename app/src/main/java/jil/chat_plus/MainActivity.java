@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonTap(View v){
       //  Toast myToast = Toast.makeText( getApplicationContext(),);
-        Toast myToast2 = Toast.makeText(getApplicationContext(),"Ouch!!",Toast.LENGTH_LONG);
-        myToast2.show();
+        Toast myToast = Toast.makeText(getApplicationContext(),"Ouch!!",Toast.LENGTH_LONG);
+        myToast.show();
     }
 
 
