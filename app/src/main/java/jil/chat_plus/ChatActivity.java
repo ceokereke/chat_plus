@@ -1,21 +1,33 @@
 package jil.chat_plus;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatActivity extends Activity {
 
+    private ChatArrayAdapter adp;
+    private ListView list;
+    private EditText chatText;
+    private Button btn;
+    Intent in;
+    private boolean side=false;
+
+    //called when the activity is first created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+     //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+     //   setSupportActionBar(toolbar);
 
     }
 
